@@ -1,0 +1,8 @@
+{
+  "name": "Remix SentinelLab - Web Application Security Platform",
+  "description": "A web-based security testing lab, mini vulnerability scanner, and secure authentication testing suite for cybersecurity education.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

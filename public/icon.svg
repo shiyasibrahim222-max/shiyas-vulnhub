@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a101d"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#1e293b" stroke-width="4"/>
+  
+  <!-- Subtle radar pulse rings -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="8 8" opacity="0.25"/>
+  <circle cx="256" cy="256" r="130" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.35"/>
+  
+  <!-- Outer Shield Glow -->
+  <path d="M256 90 L390 148 C390 282 328 376 256 422 C184 376 122 282 122 148 Z" fill="url(#glowGrad)"/>
+  
+  <!-- Main Shield Body -->
+  <path d="M256 104 L378 158 C378 274 322 358 256 402 C190 358 134 274 134 158 Z" fill="#0f172a" stroke="url(#shieldGrad)" stroke-width="8" stroke-linejoin="round"/>
+  
+  <!-- Inner Circuit / Keyhole / Terminal Symbol -->
+  <path d="M256 180 L310 234 L280 234 L280 300 L232 300 L232 234 L202 234 Z" fill="url(#shieldGrad)" opacity="0.9"/>
+  <circle cx="256" cy="336" r="14" fill="#34d399"/>
+  
+  <!-- Checkmark / Lock Arch -->
+  <path d="M216 250 L244 278 L296 216" fill="none" stroke="#04121a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
